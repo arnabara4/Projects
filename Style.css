@@ -1,0 +1,498 @@
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);
+}
+navbar{
+    background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);
+    width:100vw;
+    height: 100px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border-style:solid;
+    border-color: rgba(154, 92, 0, 0.718);
+    border-width:3px;
+
+}
+@keyframes animate{
+    from{ 
+        font-size: 20px;
+    }
+    To{ 
+        font-size: 25px;
+    
+    }
+}
+.navbaricon{
+    font-family: cursive;
+    border:1px solid rgb(85, 13, 13);
+    border-radius: 15px;
+    background-color: rgb(246, 202, 128);
+    color: rgba(150, 111, 51,1);
+    font-size: 20px;
+    padding:10px;
+    display: inline-block;
+    height:fit-content;  
+    transition: all 0.1s linear 0.1ms; 
+    text-decoration: none;
+}
+.navbaricon:hover{
+    font-size: 25px;
+    cursor: pointer;
+}
+.navbaricon:active{
+    background-color: brown;
+    font: 25px;
+}
+
+.navbarbuttons{
+    width:70%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.intropage{
+    background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);
+    display:block;
+    height:550px;
+    display:flex;
+    justify-content: space-evenly;
+}
+#bookstorepic{
+    width: 50vw ;
+}
+#Bookstorename{
+    width: 50vw;
+    font-family: cursive;
+    display:flex;
+    flex-direction: column;
+}
+#coverpic{
+    width:48vw;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+.storename{
+    display: inline-block;
+    color: rgb(133, 58, 18);
+    width:50vw;
+    font-size: 70px;
+    position:relative;
+}
+.subtitletext{
+    font-size: 40px;
+}
+.welcome{
+    font-size: 55px;
+    padding-bottom: 0;
+    padding-top: 40px;
+}
+#BESTselling{
+    font-family: cursive;
+    border:1px solid rgb(85, 13, 13);
+    border-radius: 15px;
+    font-size: 20px;
+    padding:10px;
+    display: inline-block;
+    height:fit-content;
+    color: black;
+    position:relative;
+    left:100px;
+    top:50px;
+    background-color: rgb(190, 90, 8);
+    transition: all 0.1s linear 0.1ms; 
+    text-decoration: none;
+}
+#BESTselling:hover{
+    font-size: 25px;
+    cursor: pointer;
+}
+#BESTselling:active{
+    background-color: brown;
+}
+.linebreak{
+    background-color: brown;
+    border:none;
+    height:1px;
+}
+.Bestsellsection{
+    height:600px;
+}
+.bestselltitle{
+    font-family: cursive;
+    background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);
+    color:black;
+    font-size: 35px;
+    display: inline-block;
+    border-style: solid;
+    border-width:2px;
+    border-radius: 15px;
+    border-color: black;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.bestsellbooks{
+    margin-top: 40px;
+    height:400px;
+    display:flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 20px;
+    column-gap: 20px;
+    overflow-x: scroll;
+
+}
+.bsbook{
+    background-image: url(bg5.jpeg);
+    background-size: cover;
+    padding-top: 6px;
+    height:330px;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 3px;
+    border-color: rgb(173, 90, 0);
+    transition: all 0.1s linear 0.1ms; 
+}
+.bsbook:hover{
+    background-image: url(./bg5.jpeg);
+    background-size: cover;
+    padding-top: 7px;
+    height:350px;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 3px;
+    border-color: rgb(173, 90, 0);
+    transform: scale(1.1);
+    z-index: 10;
+    
+}
+.undertag{
+    background-size: cover;
+}
+.price{
+    border-style: solid;
+    border-width: 2px;
+    border-radius:15px;
+    background-color: rgb(230, 151, 32);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    transition: all 0.1s linear 0.1ms; 
+}
+.price:hover{
+    transform: scale(1.2);
+}
+.recommendsection{
+    height:500px;
+}
+.addtocart{
+    border-radius:15px;
+    background-color: rgb(230, 151, 32);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    transition: all 0.1s linear 0.1ms; 
+}
+.addtocart:hover{
+    transform: scale(1.2);
+}
+.recommendsection{
+    height:500px;
+}
+#genreinput{ 
+    font-family:  'Courier New', Courier, monospace;
+    background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+    color:black;
+    font-size: 35px;
+    display: inline-block;
+    border-style: solid;
+    border-width:2px;
+    border-radius: 15px;
+    border-color: black;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+#recommendbutton{
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(190, 90, 8);
+    color:black;
+    font-size: 25px;
+    display: inline-block;
+    border-style: solid;
+    border-width:2px;
+    border-radius: 15px;
+    border-color: black;
+    margin-top: 40px;
+    margin-left: 30px;
+    transition: all 0.1s linear 0.1ms; 
+}
+.recbook{
+    background-image: url(./bg5.jpeg);
+    background-size: cover;
+    padding-top: 7px;
+    height:330px;
+    border-style: solid;
+    border-radius: 15px;
+    transition: all 0.1s linear 0.1ms; 
+}
+.recbook:hover{
+        background-image: url(./bg5.jpeg);
+        background-size: cover;
+        padding-top: 7px;
+        height:350px;
+        border-style: solid;
+        border-radius: 15px;
+        border-width: 3px;
+        border-color: rgb(173, 90, 0);
+        transform: scale(1.1);
+        z-index: 10;
+}
+
+#recommendbutton:active{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: brown;
+}
+.recommendedbooks{
+    margin-top: 40px;
+    height:400px;
+    display:flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top:20px;
+    column-gap: 40px;
+    overflow-x: auto;
+}
+.morerecommendations{
+    display:flex;
+    height:600px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.lightnovelrecommend{
+    display:flex;
+    background-image: url("lnbackground.jpeg");
+    background-size:cover;
+    justify-content: center;
+    height:200px;
+    width:50vw;
+}
+.mangarecommend{
+    height:200px;
+    width:50vw;
+}
+.romancerecommend{
+    height:350px;
+    width:45vw;
+}
+#sao{
+    rotate: 315deg;
+    padding-top: 20px;
+}
+#cote{
+    rotate:45deg;
+    padding-top: 20px;
+}
+.mangarecommend{
+    background-image: url("./MANGA_BANNER.webp");
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+}
+#op{
+    rotate:320deg;
+}
+.romancerecommend{
+    background-image: url("romancebg.webp");
+    background-size: cover;
+    margin-left: 25vw;
+    display:flex;
+    justify-content: center;
+    padding-top:30px;
+}
+#fios{
+    rotate: 315deg;
+    padding-top: 30px;
+}
+#startswus{
+    rotate:45deg;
+    padding-top: 30px;
+}
+.Reviews{
+    height:750px;
+    padding-top: 60px;
+}
+#reviewinputsection{
+    border:solid 3px rgb(170, 54, 0);
+    border-radius: 14px;
+    margin-top: 15px;
+}
+.reviewed{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    column-gap: 20px;
+}
+.review1{
+    width:33vw;
+    border: 2px solid rgb(189, 47, 0);
+    border-radius: 15px;
+}
+.review2{
+    width:33vw;
+    border: 2px solid rgb(189, 47, 0);
+    border-radius: 15px;
+}
+.review3{
+    width:33vw;
+    border: 2px solid rgb(189, 47, 0);
+    border-radius: 15px;
+}
+.reviewimg{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.reviewtitle{
+    font-family: cursive;
+    background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);
+    color:black;
+    font-size: 35px;
+    display: inline-block;
+    border-style: solid;
+    border-width:2px;
+    border-radius: 15px;
+    border-color: black;
+    height:fit-content;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.reviewer{
+    font-size: 30px;
+}
+.reviewsubmission{
+    padding-top: 100px;
+    padding-left: 100px;
+    display:flex;
+    column-gap: 20px
+
+}
+#emailinput{
+    font-family:  'Courier New', Courier, monospace;
+    background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+    color:black;
+    font-size: 25px;
+    display: inline-block;
+    border-style: solid;
+    border-width:2px;
+    border-radius: 15px;
+    border-color: black;
+    margin-top: 0px;
+    margin-left: 30px;
+
+}
+#nameinput{
+    font-family:  'Courier New', Courier, monospace;
+    background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+    color:black;
+    font-size: 25px;
+    display: inline-block;
+    border-style: solid;
+    border-width:2px;
+    border-radius: 15px;
+    border-color: black;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+#reviewinput{
+    height:200px;
+    width:300px;
+    padding-bottom: 40px;
+    position: relative;
+    left:220px;
+    bottom:100px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    word-wrap: break-word;
+}
+#submit2{
+    font-family:  'Courier New', Courier, monospace;
+    background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+    color:black;
+    font-size: 25px;
+    display: inline-block;
+    border-style: solid;
+    border-width:2px;
+    border-radius: 15px;
+    border-color: black;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+#textarea{
+    width:400px;
+    height: 200px;
+    border:solid 2px black;
+    border-radius: 15px;
+    font-size: 20px;
+}
+#submit2{
+    height:fit-content;
+    width:150px;
+    height:50px;
+}
+#submit2:active{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: brown;
+}
+footer{
+    height:300px;
+}
+
+#backtotop{
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(190, 90, 8);
+    color:black;
+    font-size: 25px;
+    display: flex;
+    border-style: solid;
+    border-width:2px;
+    border-radius: 15px;
+    border-color: black;
+    margin-top: 40px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width:1432px;
+    justify-content: center;
+    text-decoration: none;
+}
+#backtotop:active{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: brown;
+}
+#footercomp{
+    display:flex;
+    justify-content: space-evenly;
+}
+#icon{
+    font-size: 50px;
+}
+.footericons{
+    display:flex;
+    column-gap: 20px;
+}
+.footerlink{
+    font-family:cursive;
+    border:none;
+    color: rgba(150, 111, 51,1);
+    font-size: 20px;
+    padding:10px;
+    display: inline-block;
+    height:fit-content;
+
+}
+
+
+
